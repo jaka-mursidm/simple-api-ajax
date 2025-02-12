@@ -10,7 +10,9 @@ function showMovies(){
             if(result.Response == "True"){
                 console.log(result);   
             }else{
-                console.log("Movie not found!");
+                $('#movie-container').html(`<div class="alert alert-danger" role="alert">
+                Movie not Found!
+                </div>`)
 
             }
         },

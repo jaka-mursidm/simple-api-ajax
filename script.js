@@ -2,7 +2,7 @@
 function searchMovies(){
     const valueInput = $('#search-input').val() || 'movie';
     $.ajax({
-        url : 'http://www.omdbapi.com/?apikey=42c0770b',
+        url : 'https://www.omdbapi.com/?apikey=42c0770b',
         method : 'GET',
         data :  {
             s : valueInput
@@ -39,7 +39,7 @@ function searchMovies(){
 }
 function showMovies(){
     $.ajax({
-        url : 'http://www.omdbapi.com/?apikey=42c0770b',
+        url : 'https://www.omdbapi.com/?apikey=42c0770b',
         method : 'GET',
         data :  {
             s : 'movie'
@@ -78,7 +78,7 @@ function showMovies(){
 function showRecentMovies() {
     const currentYear = new Date().getFullYear();
     $.ajax({
-        url : 'http://www.omdbapi.com/?apikey=42c0770b',
+        url : 'https://www.omdbapi.com/?apikey=42c0770b',
         method : 'GET',
         data :  {
             s : 'movie',

@@ -8,7 +8,6 @@ function showMovies(){
         },
         success: function (result) {
             if(result.Response == "True"){
-                console.log(result);   
             }else{
                 $('#movie-container').html(`<div class="alert alert-danger" role="alert">
                 Movie not Found!
@@ -35,17 +34,14 @@ function showRecentMovies(content) {
             let movies = result.Search;
             if(result.Response == "True"){
                 if(content == "carousel"){
-                    $.each(movies, function (i,data) {
+            movies.slice(0, 5).forEach(function (data, i) {
+                        let activated = i === 0 ? "active" : ""; 
                         $('#carousel-movie-poster').append(`
-                             <div class="carousel-item active">
-                            <img src="`+data.Poster +`" class="d-block w-100" alt="Movie Poster">
-                        </div>`);   
+                            <div class="carousel-item ` + activated+`">
+                           <img src="`+data.Poster +`" class="d-block w-100" alt="Movie Poster">
+                       </div>`);  
                         } );
                 }
-                else{
-                    
-                }
-                console.log(result);   
             }else{
                 $('#movie-container').html(`<div class="alert alert-danger" role="alert">
                 Movie not Found!

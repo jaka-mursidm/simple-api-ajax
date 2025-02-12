@@ -2,6 +2,7 @@
   background-image: url("assets/overview.jpg");
   background-size: cover;
   background-position: center;
+  background-position-y: 50px;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -16,24 +17,27 @@
 }
 
 .carousel-item h2 {
-  animation: slide 4s forwards ease-in-out; /* Durasi animasi total adalah 4 detik */
+  cursor: default;
+  animation: slide 4s forwards ease-in-out;
 }
-
+body {
+  background-color: black;
+}
 @keyframes slide {
   0% {
     transform: translateY(-50px);
     opacity: 0;
   }
-  30% {
+  40% {
     transform: translateY(0);
     opacity: 1;
   }
-  70% {
+  90% {
     transform: translateY(0);
     opacity: 1;
   }
   100% {
-    transform: translateY(-50px);
+    transform: translateY(0);
     opacity: 0;
   }
 }

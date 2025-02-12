@@ -1,0 +1,6 @@
+#carousel-movie-poster {
+  background-image: url("assets/overview.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

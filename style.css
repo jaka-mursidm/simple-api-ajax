@@ -14,3 +14,26 @@
   background-color: rgba(0, 0, 0, 0.4);
   color: white !important;
 }
+
+.carousel-item h2 {
+  animation: slide 4s forwards ease-in-out; /* Durasi animasi total adalah 4 detik */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  30% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}

@@ -15,7 +15,7 @@ https://jaka-mursidm.github.io/simple-api-ajax/
 2. Or, clone/pull this repository and open `index.html` in your browser:
 
 ```sh
-git clone https://github.com/username/repository-name.git
-cd repository-name
+git clone https://jaka-mursidm.github.io/simple-api-ajax.git
+cd simple-api-ajax
 open index.html
 ```

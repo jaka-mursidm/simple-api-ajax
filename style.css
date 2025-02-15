@@ -21,6 +21,22 @@
 body {
   background-color: black;
 }
+
+.build-app-container {
+  img {
+    filter: grayscale(100%) brightness(1) invert(1);
+    transition: filter 0.5s;
+  }
+  img:hover {
+    filter: grayscale(0%) brightness(1) invert(0);
+  }
+  .img-sq {
+    width: 100px;
+  }
+  .img-ls {
+    height: 50px;
+  }
+}
 @keyframes slide {
   0% {
     transform: translateY(-50px);
